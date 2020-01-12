@@ -2,7 +2,7 @@ var programCode = function(processingInstance) {
     with (processingInstance) {
       size(400, 400); 
       frameRate(60);
-      println("FOR WINSTON!!! CHAAARRRGE!!!");
+      println("I HEREBY BANISH THIS BACKGROUND COLOR GLITCH UNTIL WINSTON GOES ON A DIET!!!");
         
         
         
@@ -12168,7 +12168,7 @@ for(var j = saveVars.fire_bolt.length; j--;){
             break;
         }
         //load bar and stuff:
-        background(127+cos(loadNum)*127, 127+cos(loadNum+120)*127, 127+cos(loadNum-120)*127);
+        background(127+cos(loadNum*0.0174532925)*127, 127+cos((loadNum+120)*0.0174532925)*127, 127+cos((loadNum-120)*0.0174532925)*127);
         textSize(20);
         fill(50, 255, 50);
         text("Loading. "+loadNum+"% done", 200, 180);
