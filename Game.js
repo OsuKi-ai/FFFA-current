@@ -2,7 +2,7 @@ var programCode = function(processingInstance) {
     with (processingInstance) {
       size(400, 400); 
       frameRate(60);
-      angleMode = "degrees";
+      println("FOR WINSTON!!! CHAAARRRGE!!!");
         
         
         
