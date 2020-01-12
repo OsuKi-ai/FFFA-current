@@ -3,6 +3,7 @@ var programCode = function(processingInstance) {
       size(400, 400); 
       frameRate(60);
       println("I HEREBY BANISH THIS BACKGROUND COLOR GLITCH UNTIL WINSTON GOES ON A DIET!!!");
+        //PLEASE WORK PLZZZ!!!
         
         
         
