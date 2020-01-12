@@ -2,11 +2,7 @@ var programCode = function(processingInstance) {
     with (processingInstance) {
       size(400, 400); 
       frameRate(60);
-      println("I HEREBY BANISH THIS BACKGROUND COLOR GLITCH UNTIL WINSTON GOES ON A DIET!!!");
-        //PLEASE WORK PLZZZ!!!
-        
-        
-        
+
         /*credit to OsuKi-ai's pixel art generator for these graphics:
 //https://www.khanacademy.org/computer-programming/pixel-art-generator-v211/5790860974456832
 */
@@ -12169,7 +12165,7 @@ for(var j = saveVars.fire_bolt.length; j--;){
             break;
         }
         //load bar and stuff:
-        background(127+cos(loadNum*0.0174532925)*127, 127+cos((loadNum+120)*0.0174532925)*127, 127+cos((loadNum-120)*0.0174532925)*127);
+        background(127+cos((loadNum*3)*0.0174532925)*127, 127+cos(((loadNum*3)+120)*0.0174532925)*127, 127+cos(((loadNum*3)-120)*0.0174532925)*127);
         textSize(20);
         fill(50, 255, 50);
         text("Loading. "+loadNum+"% done", 200, 180);
