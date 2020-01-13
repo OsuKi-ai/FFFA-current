@@ -2,6 +2,8 @@ var programCode = function(processingInstance) {
     with (processingInstance) {
       size(400, 400); 
       frameRate(60);
+      //testing
+      println("Testing...");
 
         /*credit to OsuKi-ai's pixel art generator for these graphics:
 //https://www.khanacademy.org/computer-programming/pixel-art-generator-v211/5790860974456832
