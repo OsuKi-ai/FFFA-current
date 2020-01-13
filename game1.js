@@ -2,16 +2,32 @@ var programCode = function(processingInstance) {
     with (processingInstance) {
       size(400, 400); 
       frameRate(60);
+      //testing
+      println("Testing...");
 
         /*credit to OsuKi-ai's pixel art generator for these graphics:
 //https://www.khanacademy.org/computer-programming/pixel-art-generator-v211/5790860974456832
 */
+        
+        /*
+        You can search the program like this: ctrl-f:__[index]__
+        
+        PROGRAM INDEX KEY:
+        1: palettes.
+        2: repeats.
+        3: primary art saves
+        4: art render system
+        5: image storage
+        6: loading code
+        7: running code
+        */
 
 var scene = "loading";
 var loadNum = 0;
 var numImgsLoaded = 0;
 
 //these three variables save all the graphics for the pixel artwork. All of the pixel art you see on the screen in in here.
+//__1__
 var palettes = {
 AB:{
 " ":color(255,255,255,0),
@@ -125,6 +141,7 @@ CRZ:{
        },
 CRP:{},
 };
+//__2__
 var repeats = {
 archer_basic_drawn:{
 colorString:["",
@@ -1106,6 +1123,7 @@ colorString:["40 ",
 palette:palettes.CRB,
     },
 };//2
+//__3__
 var saveVars = {
 explosion:[
 //ka-BOOM
@@ -11707,7 +11725,7 @@ palette:{
     },
 //}ground troops
 };
-
+//__4__
 //pixel function
 var pixel = function(x, y, color, outline, pickleSize){
 fill(color);
@@ -11846,7 +11864,8 @@ animation.prototype.display = function(){
 */
 //creates a super efficient render of each pixel artwork/animation stage at a size of 1. Change the 1 to get bigger pixel sizes
 
-
+        
+//__5__
 //animation stage arrays
 var targets = {};
 var boomImages = [];
@@ -11891,6 +11910,7 @@ var zapNum = 0;
 draw = function() {
     try{
     //loading code
+//__6__
     //{
     
         if(scene === "loading"){
@@ -12165,7 +12185,7 @@ for(var j = saveVars.fire_bolt.length; j--;){
             break;
         }
         //load bar and stuff:
-        background(127+cos((loadNum*3)*0.0174532925)*127, 127+cos(((loadNum*3)+120)*0.0174532925)*127, 127+cos(((loadNum*3)-120)*0.0174532925)*127);
+        background(127+cos((loadNum*5)*0.0174532925)*127, 127+cos(((loadNum*5)+120)*0.0174532925)*127, 127+cos(((loadNum*5)-120)*0.0174532925)*127);
         textSize(20);
         fill(50, 255, 50);
         text("Loading. "+loadNum+"% done", 200, 180);
@@ -12179,6 +12199,7 @@ for(var j = saveVars.fire_bolt.length; j--;){
     }
     //}
     //running code{
+//__7__
 
     
     else{
