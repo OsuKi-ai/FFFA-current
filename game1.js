@@ -12308,31 +12308,22 @@ for(var j = saveVars.fire_bolt.length; j--;){
     if(floor(crossBoomNum/6) >= crossbow_boom_imgs.length){
         crossBoomNum = 0;
     }
-    
     crossZapNum++;
-    
     if(floor(crossZapNum/6) >= crossbow_zap_imgs.length){
         crossZapNum = 0;
     }
-    
     crossPoisonNum++;
-    
     if(floor(crossBoomNum/6) >= crossbow_slow_imgs.length){
         crossPoisonNum = 0;
     }
-    
     sparkNum++;
-    
     if(floor(sparkNum/6) >= firebolt_imgs.length){
         sparkNum = 0;
     }
-    
     zapNum++;
-    
     if(floor(zapNum/3) >= lightning_bolt_imgs.length){
         zapNum = 0;
     }
-    
     }
     }
     //}//}
